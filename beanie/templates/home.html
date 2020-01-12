@@ -1,0 +1,9 @@
+<h1> Beanie</h1>
+<p>Respondents Profile</p>
+<ul>
+  {% for demog in demogs %}
+  <li>
+    <a href="{% url 'respo_code' demog.id %}">{{ demog.name|upper }}</a>
+    </li>
+    {% endfor %}
+</ul>
